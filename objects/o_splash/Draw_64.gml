@@ -1,0 +1,1 @@
+draw_sprite(s_splash,image_index,GUIWIDTH/2,GUIHEIGHT/2);
