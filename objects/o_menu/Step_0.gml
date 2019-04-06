@@ -38,7 +38,7 @@ if (menu_committed != -1)
 	{
 		case 2: default:
 			{
-				transition("slide",TRANS_MODE.GOTO,rm_test);
+				transition("slide",TRANS_MODE.NEXT);
 				audio_stop_all();
 			}
 			break;

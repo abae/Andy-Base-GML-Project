@@ -3,11 +3,11 @@
 event_inherited();
 
 // Movement ///////////////////////////////////////////////////////////////////
-movespeed = 5;
-accel = 2;
-air_accel = .1;
+movespeed = 3;
+accel = 1;
+air_accel = .5;
 frc = .3;
-jumpspeed = 4;
+jumpspeed = 8;
 grav = .5;
 vari_jump_accel = .2;
 vterm = 7;
