@@ -1,21 +1,40 @@
 //if (live_call()) return live_result;
 
-vx = 0; //horizontal speed
-vy = 0; //vertical speed
+event_inherited();
 
-movespeed = .9;
-accel = .6;
+// Movement ///////////////////////////////////////////////////////////////////
+movespeed = 5;
+accel = 2;
 air_accel = .1;
 frc = .3;
 jumpspeed = 4;
-grav = .1;
+grav = .5;
 vari_jump_accel = .2;
-vterm = 1.7;
+vterm = 7;
 grounded = false;
 
-//Forgiveness mechanic
+// Forgiveness mechanic
 canjump = 0;
 jump_buffer = 5; //amount of frames for forgiveness
 
-spr_walk = s_player;
-spr_idle = s_player;
+//taking damage
+damage = 0; //damage value
+invulnerable = false;
+damage_timer = room_speed * .75;
+global.maxhp = 100;
+global.hp = global.maxhp;
+
+// Misc ///////////////////////////////////////////////////////////////////////
+
+// Finite state machine
+enum states
+{
+	normal,
+	dead
+}
+state = states.normal
+
+// For squash + stretch
+xscale = 1;
+yscale = 1;
+facing = image_xscale; // Change xscale in editor to adjust initial facing
