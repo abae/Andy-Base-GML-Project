@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_slope45",
     "eventList": [
-        
+        {
+            "id": "1679e06f-c84d-4feb-895c-7d4f76fc21e3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "97d16cd9-6baa-4a95-8d90-87d26ff83234"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

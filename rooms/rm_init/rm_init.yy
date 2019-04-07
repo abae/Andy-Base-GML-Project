@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "65e4be4c-fae3-41ee-9bbd-de2c3e9f300b"
+        "65e4be4c-fae3-41ee-9bbd-de2c3e9f300b",
+        "db55aebd-cb91-4d31-869e-23ca71adad02"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_61C2EA8A","id": "65e4be4c-fae3-41ee-9bbd-de2c3e9f300b","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_61C2EA8A.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_61C2EA8A","objId": "bcc385ff-6f6d-4f24-9f55-1ce6ef6fb59b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 0,"y": 0}
+{"name": "inst_61C2EA8A","id": "65e4be4c-fae3-41ee-9bbd-de2c3e9f300b","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_61C2EA8A.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_61C2EA8A","objId": "bcc385ff-6f6d-4f24-9f55-1ce6ef6fb59b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 0,"y": 0},
+{"name": "inst_2D8D6145","id": "db55aebd-cb91-4d31-869e-23ca71adad02","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2D8D6145","objId": "7f43fcf2-4430-4486-b62a-9fe678bcd529","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 16,"y": 0}
             ],
             "layers": [
 
