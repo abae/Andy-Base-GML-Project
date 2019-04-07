@@ -23,7 +23,7 @@ buff = 8;
 
 //zoom and move
 if (room == rm_menu) zoom_level = 1;
-else zoom_level = 1/3;
+else zoom_level = 1;
 
 //interpolation rate
 zoom_rate = .05;

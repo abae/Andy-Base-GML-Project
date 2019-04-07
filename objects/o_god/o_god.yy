@@ -5,6 +5,16 @@
     "name": "o_god",
     "eventList": [
         {
+            "id": "31622637-3edf-45d7-bf1b-b1edfd5d9b68",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "bcc385ff-6f6d-4f24-9f55-1ce6ef6fb59b"
+        },
+        {
             "id": "11f67613-167a-42a4-84f6-9ef87352e1cd",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -15,13 +25,13 @@
             "m_owner": "bcc385ff-6f6d-4f24-9f55-1ce6ef6fb59b"
         },
         {
-            "id": "31622637-3edf-45d7-bf1b-b1edfd5d9b68",
+            "id": "4617839a-d05a-4fb4-97b3-bcd7c8fba95a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
+            "eventtype": 2,
             "m_owner": "bcc385ff-6f6d-4f24-9f55-1ce6ef6fb59b"
         }
     ],

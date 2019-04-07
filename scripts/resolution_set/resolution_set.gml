@@ -1,31 +1,40 @@
-// Sets the resolution, then goes to the target room.
-if (dev){
-	dispH = 720;
-	dispW = 1280;
-} else{
-dispH = display_get_height();
-dispW = display_get_width();
+//resolution variables
+ideal_width = 0;
+ideal_height = 360;
+
+if (dev) aspect_ratio = 16/9;
+else aspect_ratio = display_get_width()/display_get_height();
+
+ideal_width = round(ideal_height*aspect_ratio);
+
+//Pixel perfect scale
+if (display_get_width() mod ideal_width != 0)
+{
+    var d = round(display_get_width()/ideal_width);
+    ideal_width = display_get_width()/d;
+}
+if (display_get_height() mod ideal_height != 0)
+{
+    var d = round(display_get_height()/ideal_height);
+    ideal_height = display_get_height()/d;
 }
 
-view_height = 1024;
-
-//else wview = max(dispW-200,960);
-wh_ratio = dispW/dispH;
-view_width = view_height*wh_ratio
-
-////if os_type == os_windows
-//    view_width = 640;
+if (ideal_width & 1) ideal_width++;
+if (ideal_height & 1) ideal_height++;
 
 globalvar GUIWIDTH, GUIHEIGHT;
-GUIWIDTH = view_width;
-GUIHEIGHT = view_height
-display_set_gui_size(view_width,view_height)
-var i;
-for (i = 0; i < 500; i += 1){    
-    if (room_exists(i)){        
-        room_set_view(i, 0, 1, 0, 0, view_width, view_height, 0, 0, view_width, view_height, -1, -1, noone)                       
+GUIWIDTH = ideal_width;
+GUIHEIGHT =	ideal_height;
+
+for(var i=1; i<=room_last; i++;)
+{
+    if (room_exists(i))
+    {
+        room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,noone);
+        room_set_view_enabled(i,true);
     }
 }
-window_set_size(view_width, view_height)
-window_set_position((display_get_width()-GUIWIDTH)/2,(display_get_height()-GUIHEIGHT)/2)
-surface_resize(application_surface, display_get_gui_width(), display_get_gui_height()); 
+surface_resize(application_surface,ideal_width,ideal_height);
+display_set_gui_size(ideal_width,ideal_height);
+window_set_size(ideal_width,ideal_height);
+window_set_position((display_get_width()-ideal_width)/2,(display_get_height()-ideal_height)/2);

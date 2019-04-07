@@ -12,8 +12,6 @@
 /// @param hport The height of the area the view occupies on-screen.
 /// @param hborder The minimum horizontal space between the edge of the view and the object it is set to follow (before the view begins moving and if it is set to follow an object).
 /// @param vborder The minimum vertical space between the edge of the view and the object it is set to follow (before the view begins moving and if it is set to follow an object).
-/// @param hspeed The maximum horizontal speed the view can move at.
-/// @param vspeed The maximum vertical speed the view can move at.
 /// @param obj The object or instance to follow. -1 to disable object following.
 
 var __ind = argument0;
