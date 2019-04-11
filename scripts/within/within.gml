@@ -9,4 +9,4 @@
 var a = argument0;
 var b = argument1;
 var c = argument2/2;
-return (a > b-c && a < b+c);
+return (a > b-c and a < b+c);

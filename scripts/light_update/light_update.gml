@@ -5,7 +5,7 @@
 var light = argument0;
 
 // Validate argument
-if(__LIGHTING_ERROR_CHECKS && (!ds_exists(light, ds_type_list) || ds_list_size(light) != eLight.Count)) {
+if(__LIGHTING_ERROR_CHECKS and (!ds_exists(light, ds_type_list) or ds_list_size(light) != eLight.Count)) {
 	// This array is not a light
 	show_debug_message("light_update(light): argument `light` is not a light array");
 	return;
@@ -79,14 +79,14 @@ else {
 }
 
 // If the light is dirty, destroy set of shadow casters out of range -- it is out of date
-if(dirty && out_of_range_map != undefined) {
+if(dirty and out_of_range_map != undefined) {
 	ds_map_destroy(out_of_range_map);
 	out_of_range_map = undefined;
 	light[| eLight.ShadowCastersOutOfRange] = undefined;
 }
 
 // If the light is dirty or the camera is different, destroy set of culled shadow casters -- it is out of date
-if(culled_shadow_casters != undefined && (dirty || light_last_camera == undefined || !array_equals(light_last_camera, camera))) {
+if(culled_shadow_casters != undefined and (dirty or light_last_camera == undefined or !array_equals(light_last_camera, camera))) {
 	ds_map_destroy(culled_shadow_casters);
 	culled_shadow_casters = undefined;
 	light[| eLight.CulledShadowCasters] = undefined;
@@ -100,7 +100,7 @@ var has_culled_shadow_casters = culled_shadow_casters != undefined;
 // Iterate over all shadow casters and trace shadows
 with(obj_shadow_caster) {
 	// Is the light ignoring this shadow caster?
-	if(has_ignore_set && ds_map_exists(ignore_set, id)) {
+	if(has_ignore_set and ds_map_exists(ignore_set, id)) {
 		// Yes, skip it
 		continue;
 	}
@@ -110,16 +110,16 @@ with(obj_shadow_caster) {
 	var shadow_caster_static = (flags & eShadowCasterFlags.Static) != 0;
 	
 	// If the shadow caster is static and it isn't dirty, do we have cached information to cull it?
-	if(shadow_caster_static && !shadow_caster_dirty) {
+	if(shadow_caster_static and !shadow_caster_dirty) {
 		// Is this shadow caster known to be out of range of this light?
 		// Directional lights are infinite so exclude those
-		if(has_out_of_range_map && light_type != eLightType.Directional && ds_map_exists(out_of_range_map, id)) {
+		if(has_out_of_range_map and light_type != eLightType.Directional and ds_map_exists(out_of_range_map, id)) {
 			// It is out of range
 			continue;
 		}
 	
 		// Check if it has been culled against this light
-		if(has_culled_shadow_casters && ds_map_exists(culled_shadow_casters, id)) {
+		if(has_culled_shadow_casters and ds_map_exists(culled_shadow_casters, id)) {
 			// This shadow caster has been culled -- it does not affect this light
 			continue;
 		}
@@ -147,7 +147,7 @@ with(obj_shadow_caster) {
 	
 	// Is this shadow caster outside the active camera, and is the direction from the light pointing away from it?
 	// Exclude directional light from this test for now
-	if(!light_is_directional && outside_active_camera) {
+	if(!light_is_directional and outside_active_camera) {
 		// It is outside the active camera
 		// However its shadow might still affect the global shadow map
 		var vertices = polygon[ePolygon.Length];
@@ -189,11 +189,11 @@ with(obj_shadow_caster) {
 	// Is the shadow caster static, and if so do we need to rebuild its buffer?
 	if(shadow_caster_static) {
 		// The shadow caster is static
-		if(!dirty && !shadow_caster_dirty) {
+		if(!dirty and !shadow_caster_dirty) {
 			// Neither the light nor shadow caster is dirty
 			shadow = light_static_get_array(light, id);
 		}
-		else if(shadow_caster_dirty && (flags & eShadowCasterFlags.MarkedForCleanup) == 0) {
+		else if(shadow_caster_dirty and (flags & eShadowCasterFlags.MarkedForCleanup) == 0) {
 			// The shadow caster is dirty, mark it to get cleaned after the lighting pass
 			// This will unset the dirty flag on it
 			ds_list_add(global.worldDirtyShadowCasters, id);

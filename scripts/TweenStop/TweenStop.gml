@@ -14,7 +14,7 @@ if (is_real(_t))
 
 if (is_array(_t))
 {
-    if (_t[TWEEN.STATE] >= 0 || _t[TWEEN.STATE] <= TWEEN_STATE.PAUSED)
+    if (_t[TWEEN.STATE] >= 0 or _t[TWEEN.STATE] <= TWEEN_STATE.PAUSED)
     {
         _t[@ TWEEN.STATE] = TWEEN_STATE.STOPPED;
         

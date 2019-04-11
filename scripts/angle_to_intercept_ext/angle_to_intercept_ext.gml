@@ -49,7 +49,7 @@ if(instance_exists(target))                                                     
     var target_speed            = point_distance(target_px, target_py, target_x, target_y);                 //Find the velocity components of the target.
     var target_direction        = point_direction(target_px, target_py, target_x, target_y);
     
-    if(target_xoffset != 0 || target_yoffset != 0)                                                          //After the initial velocity calculation, determine the offset position to aim at if an offset has been set.
+    if(target_xoffset != 0 or target_yoffset != 0)                                                          //After the initial velocity calculation, determine the offset position to aim at if an offset has been set.
     {
         if(relative_offset)
         {

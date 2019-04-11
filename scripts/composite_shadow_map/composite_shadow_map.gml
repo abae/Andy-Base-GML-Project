@@ -62,7 +62,7 @@ for(var i = 0, firstLight = true; i < lightCount; ++i) {
 	
 	// Directional lights are infinite and have no source, so there's no optimization to be had here
 	// Area and line lights are tricky and they shouldn't be used excessively in any case
-	if(lightType != eLightType.Directional && lightType != eLightType.Area && lightType != eLightType.Line) {
+	if(lightType != eLightType.Directional and lightType != eLightType.Area and lightType != eLightType.Line) {
 		// Should this light be using a unique shadow map?
 		// Multiplied by two because we treat all lights as omnidirectional, so range is the radius of the light
 		var shadowMapSize = get_next_pot(ceil(lightRange)) * 2;
@@ -72,7 +72,7 @@ for(var i = 0, firstLight = true; i < lightCount; ++i) {
 		
 		// Update the light's shadow map
 		// This will create, resize and free it as necessary (so we have to call it even if useShadowMap is false!)
-		if(light_maintain_shadow_map(light) && useShadowMap) {
+		if(light_maintain_shadow_map(light) and useShadowMap) {
 			// Use the light's shadow map
 			shadowMap = light[| eLight.ShadowMap];
 		
@@ -164,7 +164,7 @@ for(var i = 0, firstLight = true; i < lightCount; ++i) {
 	shader_set_uniform_i(global.u_AttenuationEnabled, false);
 	
 	// Area or line light line emitter
-	if(lightType == eLightType.Area || lightType == eLightType.Line) {
+	if(lightType == eLightType.Area or lightType == eLightType.Line) {
 		// Area light line emitter
 		var dir = lightDirection + 90;
 		var w = lightWidth * 0.5; // * 0.5 because the line emitter is centered on the light

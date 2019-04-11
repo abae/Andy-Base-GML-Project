@@ -3,4 +3,4 @@
 /// @arg value to check
 /// @arg value to check
 
-return (argument0 >= argument1 && argument0 <= argument2);
+return (argument0 >= argument1 and argument0 <= argument2);

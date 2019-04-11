@@ -18,7 +18,7 @@ if (vy < 0) {
 
 if (instance_exists(platformTarget)) {
     if (platformTarget) {
-        if (place_meeting(x, y + 1, platformTarget) && !place_meeting(x, y, platformTarget)) {
+        if (place_meeting(x, y + 1, platformTarget) and !place_meeting(x, y, platformTarget)) {
             //Platform below
             vy = 0;
             return true;
@@ -31,14 +31,14 @@ if (instance_exists(platformTarget)) {
 if (vy > 0) {
     with (p_entity) {
         {
-            if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
+            if (place_meeting(x, y - 1, other) and !place_meeting(x, y, other)) {
                 vy = 0;
             }
         }
     }
     
     with (p_platform) {
-        if (place_meeting(x, y - 1, other) && !place_meeting(x, y, other)) {
+        if (place_meeting(x, y - 1, other) and !place_meeting(x, y, other)) {
             // Land
             vy = 0;
             other.platformTarget = id;

@@ -7,7 +7,7 @@
 
 if (argument0 mod 1 == 0)
 {
-	while (argument0 > argument2 || argument0 < argument1)
+	while (argument0 > argument2 or argument0 < argument1)
 	{
 		if (argument0 > argument2)
 			argument0 += argument1 - argument2 - 1;

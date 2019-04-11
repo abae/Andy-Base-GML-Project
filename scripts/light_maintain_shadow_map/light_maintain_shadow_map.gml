@@ -23,8 +23,8 @@ if(!useShadowMap) {
 var range = light[| eLight.Range];
 var size = get_next_pot(ceil(range)) * 2;
 
-if(shadowMap == undefined || !surface_exists(shadowMap) || surface_get_width(shadowMap) != size || surface_get_height(shadowMap) != size) {
-	if(shadowMap != undefined && surface_exists(shadowMap)) {
+if(shadowMap == undefined or !surface_exists(shadowMap) or surface_get_width(shadowMap) != size or surface_get_height(shadowMap) != size) {
+	if(shadowMap != undefined and surface_exists(shadowMap)) {
 		// Recreate the surface
 		surface_free(shadowMap);
 	}

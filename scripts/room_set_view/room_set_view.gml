@@ -37,7 +37,7 @@ if (!room_exists(__ind))
 	return -1;
 }
 
-if ((__vind < 0) || (__vind > 7))
+if ((__vind < 0) or (__vind > 7))
 {
 	show_debug_message("room_set_view: view index out of range");
 	return -1;

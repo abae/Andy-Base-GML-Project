@@ -2,14 +2,14 @@
 
 #region //Player input
 //Get player input
-key_right =				keyboard_check(ord("D")) || keyboard_check(vk_right);
-key_right_pressed =		keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_right);
-key_left =				keyboard_check(ord("A")) || keyboard_check(vk_left);
-key_left_pressed =		keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_left);
-key_up =				keyboard_check(ord("W")) || keyboard_check(vk_up);
-key_up_pressed =		keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
-key_down =				keyboard_check(ord("S")) || keyboard_check(vk_down);
-key_down_pressed =		keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_up);
+key_right =				keyboard_check(ord("D")) or keyboard_check(vk_right);
+key_right_pressed =		keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right);
+key_left =				keyboard_check(ord("A")) or keyboard_check(vk_left);
+key_left_pressed =		keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left);
+key_up =				keyboard_check(ord("W")) or keyboard_check(vk_up);
+key_up_pressed =		keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);
+key_down =				keyboard_check(ord("S")) or keyboard_check(vk_down);
+key_down_pressed =		keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_up);
 key_jump =				keyboard_check_pressed(vk_space);
 key_jump_released =     keyboard_check_released(vk_space);
 key_jump_held =			keyboard_check(vk_space);
@@ -29,15 +29,15 @@ switch (state)
 			}
 			else
 			{
-				if (key_right && vx <= movespeed) vx = approach(vx,movespeed,air_accel);
-				if (key_left && vx >= -movespeed) vx = approach(vx,-movespeed,air_accel); 
+				if (key_right and vx <= movespeed) vx = approach(vx,movespeed,air_accel);
+				if (key_left and vx >= -movespeed) vx = approach(vx,-movespeed,air_accel); 
 				canjump--;
 			}
 			#endregion
 			
 			#region //jumping
 
-			if (key_jump && canjump>0)
+			if (key_jump and canjump>0)
 			{
 			    vy = -jumpspeed;
 				////audio_play_sound(sfx_jump,5,false);

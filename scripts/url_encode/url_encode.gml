@@ -23,7 +23,7 @@ for (i=1; i<=l; i+=1) {
     escapes = 0;
     //Single-byte characters
     if (o <= $7F) {
-        if (string_pos(c, special_chars) != 0) || (o < 32) {
+        if (string_pos(c, special_chars) != 0) or (o < 32) {
             escapes = 1;
             escape_bytes[0] = o;
         }

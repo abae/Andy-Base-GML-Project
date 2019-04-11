@@ -8,7 +8,7 @@ var surface = argument1;
 var update = argument2;
 
 // Validate argument
-if(__LIGHTING_ERROR_CHECKS && (!ds_exists(light, ds_type_list) || ds_list_size(light) != eLight.Count)) {
+if(__LIGHTING_ERROR_CHECKS and (!ds_exists(light, ds_type_list) or ds_list_size(light) != eLight.Count)) {
 	// This array is not a light
 	show_debug_message("light_draw(light): argument `light` is not a light array");
 	return;
@@ -29,7 +29,7 @@ var unique_shadow_map = (flags & eLightFlags.UsesUniqueShadowMap) != 0;
 var casts_shadow = (flags & eLightFlags.CastsShadows) != 0;
 var dirty = (flags & eLightFlags.Dirty) != 0;
 
-if(unique_shadow_map && !dirty && !casts_shadow) {
+if(unique_shadow_map and !dirty and !casts_shadow) {
 	// This light does not need to be redrawn
 	// Keep its surface as it is
 	return;

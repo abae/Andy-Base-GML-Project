@@ -26,7 +26,7 @@ for(var i=0; i<=d_count; i++)
 {
     d_pos = string_pos(substr, str)+(substrl-1); // End position of current value
     var copy = string_copy(str, 1, d_pos-substrl); 
-    if copy != "" || argument2 = false then array_sample[i-slot] = copy; // Copy string section to array
+    if copy != "" or argument2 = false then array_sample[i-slot] = copy; // Copy string section to array
     else slot++; // Except if argument2 was set to true
     str = string_delete(str, 1, d_pos); // Delete string section from original sample
 }

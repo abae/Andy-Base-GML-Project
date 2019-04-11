@@ -8,7 +8,7 @@ if (mode != TRANS_MODE.OFF)
 	{
 		percent = min(1,percent +max(((1-percent)/10),0.005));
 	}
-	if (percent == 1 || percent == 0)
+	if (percent == 1 or percent == 0)
 	{
 		switch(mode)
 		{

@@ -12,7 +12,7 @@ if (is_real(_t))
 
 if (is_array(_t))
 {
-    if (_t[TWEEN.STATE] >= 0 && _t[TWEEN.DURATION]!= 0)
+    if (_t[TWEEN.STATE] >= 0 and _t[TWEEN.DURATION]!= 0)
     {
         if (_t[TWEEN.PROPERTY] != TGMS_NULL__)
         {

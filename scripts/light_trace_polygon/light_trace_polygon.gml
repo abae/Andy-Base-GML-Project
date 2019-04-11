@@ -12,13 +12,13 @@ var sc_shadow_length = shadow_caster.shadow_length;
 
 // Validate arguments
 if(__LIGHTING_ERROR_CHECKS) {
-	if(!is_array(polygon) || array_length_1d(polygon) <= 3) {
+	if(!is_array(polygon) or array_length_1d(polygon) <= 3) {
 		// This array is not a polygon
 		show_debug_message("light_trace_polygon(polygon, light): argument `polygon` is not a polygon array, or has less than 3 vertices");
 		return undefined;
 	}
 	
-	if(!ds_exists(light, ds_type_list) || ds_list_size(light) != eLight.Count) {
+	if(!ds_exists(light, ds_type_list) or ds_list_size(light) != eLight.Count) {
 		// This array is not a light
 		show_debug_message("light_trace_polygon(polygon, light): argument `light` is not a light array");
 		return undefined;
@@ -37,7 +37,7 @@ var light_range = light[| eLight.Range];
 var light_type = light[| eLight.Type];
 var light_direction = light[| eLight.Direction];
 var shadow_length = min(sc_shadow_length, light[| eLight.ShadowLength]);
-var line_emitter = light_type == eLightType.Area || light_type == eLightType.Line;
+var line_emitter = light_type == eLightType.Area or light_type == eLightType.Line;
 
 // Get the # of vertices in the polygon
 var vertex_count = polygon[ePolygon.Length];

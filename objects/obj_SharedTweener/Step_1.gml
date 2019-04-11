@@ -78,7 +78,7 @@ if (isEnabled)
                     var _duration = _t[TWEEN.DURATION]; // Cache duration
                     
                     // IF tween is within start/destination
-                    if (_time > 0 && _time < _duration)
+                    if (_time > 0 and _time < _duration)
                     {
                         // Assign updated time
                         _t[@ TWEEN.TIME] = _time;
@@ -212,7 +212,7 @@ if (isEnabled)
                 var _t = _delayedTweens[| ++_tIndex]; // Get next tween from delayed tweens list
     
                 // IF tween instance exists AND delay is NOT destroyed
-                if (_t[TWEEN.STATE] == TWEEN_STATE.DELAYED && instance_exists(_t[TWEEN.TARGET]))
+                if (_t[TWEEN.STATE] == TWEEN_STATE.DELAYED and instance_exists(_t[TWEEN.TARGET]))
                 { 
                     // Decrement delay timer
 					if (_t[TWEEN.DELTA]) _t[@ TWEEN.DELAY] -= abs(_t[TWEEN.TIME_SCALE]) * _timeScaleDelta;
@@ -231,7 +231,7 @@ if (isEnabled)
                     }
                 }
                 else // If delay is marked for removal or tween is destroyed
-                if (_t[TWEEN.DELAY] == -1 || _t[TWEEN.STATE] == TWEEN_STATE.DESTROYED)
+                if (_t[TWEEN.DELAY] == -1 or _t[TWEEN.STATE] == TWEEN_STATE.DESTROYED)
                 {
                     ds_list_delete(_delayedTweens, _tIndex--); // Remove tween from delay list
                 }

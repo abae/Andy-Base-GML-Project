@@ -5,7 +5,7 @@ var _p = 0;
 var _a = argument2;
 var _val = argument0;
 
-if (_val == 0 || _a == 0) { return argument1; }
+if (_val == 0 or _a == 0) { return argument1; }
 
 _val /= argument3;
 

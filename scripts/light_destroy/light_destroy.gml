@@ -9,7 +9,7 @@ if(buffer != undefined) vertex_delete_buffer(buffer);
 
 // Destroy the shadow map
 var shadowMap = light[| eLight.ShadowMap];
-if(shadowMap != undefined && surface_exists(shadowMap)) surface_free(shadowMap);
+if(shadowMap != undefined and surface_exists(shadowMap)) surface_free(shadowMap);
 
 // Destroy static storage
 var static_storage = light[| eLight.StaticStorage];

@@ -43,7 +43,7 @@ with(_target)
     {
         if (_amount > 0)
         {
-            if (path_get_closed(_path) || _amount < 1)
+            if (path_get_closed(_path) or _amount < 1)
             {
                 x = path_get_x(_path, _amount mod 1) + _xrelative;
                 y = path_get_y(_path, _amount mod 1) + _yrelative;

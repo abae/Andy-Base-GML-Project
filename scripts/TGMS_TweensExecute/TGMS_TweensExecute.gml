@@ -119,25 +119,25 @@ switch(_selection)
         case 0:
             repeat(ds_list_size(_tweens)){
                 var _t = _tweens[| ++_tIndex];
-                if (_t[TWEEN.GROUP] == _selectionData && TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t);
+                if (_t[TWEEN.GROUP] == _selectionData and TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t);
             }
         break;
         case 1:
             repeat(ds_list_size(_tweens)){
                 var _t = _tweens[| ++_tIndex];
-                if (_t[TWEEN.GROUP] == _selectionData && TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0);
+                if (_t[TWEEN.GROUP] == _selectionData and TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0);
             }
         break;
         case 2:
             repeat(ds_list_size(_tweens)){
                 var _t = _tweens[| ++_tIndex];
-                if (_t[TWEEN.GROUP] == _selectionData && TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0, _arg1);
+                if (_t[TWEEN.GROUP] == _selectionData and TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0, _arg1);
             }
         break;
         case 3:
             repeat(ds_list_size(_tweens)){
                 var _t = _tweens[| ++_tIndex];
-                if (_t[TWEEN.GROUP] == _selectionData && TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0, _arg1, _arg2);
+                if (_t[TWEEN.GROUP] == _selectionData and TGMS_TargetExists(_t[TWEEN.TARGET])) script_execute(_script, _t, _arg0, _arg1, _arg2);
             }
         break;
         }
@@ -154,7 +154,7 @@ switch(_selection)
                 var _target = _t[TWEEN.TARGET];
 				
 				if (TGMS_TargetExists(_target)) 
-				if (_target == _selectionData || _target.object_index == _selectionData || object_is_ancestor(_target.object_index, _selectionData)){
+				if (_target == _selectionData or _target.object_index == _selectionData or object_is_ancestor(_target.object_index, _selectionData)){
 					script_execute(_script, _t);
 				}
             }
@@ -165,7 +165,7 @@ switch(_selection)
                 var _target = _t[TWEEN.TARGET];
                 
 				if (TGMS_TargetExists(_target)) 
-				if (_target == _selectionData || _target.object_index == _selectionData || object_is_ancestor(_target.object_index, _selectionData)){
+				if (_target == _selectionData or _target.object_index == _selectionData or object_is_ancestor(_target.object_index, _selectionData)){
                     script_execute(_script, _t, _arg0);
                 }
             }
@@ -176,7 +176,7 @@ switch(_selection)
                 var _target = _t[TWEEN.TARGET];
                 
 				if (TGMS_TargetExists(_target)) 
-				if (_target == _selectionData || _target.object_index == _selectionData || object_is_ancestor(_target.object_index, _selectionData)){
+				if (_target == _selectionData or _target.object_index == _selectionData or object_is_ancestor(_target.object_index, _selectionData)){
                     script_execute(_script, _t, _arg0, _arg1);
                 }
             }
@@ -187,7 +187,7 @@ switch(_selection)
                 var _target = _t[TWEEN.TARGET];
                 
 				if (TGMS_TargetExists(_target)) 
-				if (_target == _selectionData || _target.object_index == _selectionData || object_is_ancestor(_target.object_index, _selectionData)){
+				if (_target == _selectionData or _target.object_index == _selectionData or object_is_ancestor(_target.object_index, _selectionData)){
                     script_execute(_script, _t, _arg0, _arg1, _arg2);
                 }
             }

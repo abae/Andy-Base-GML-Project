@@ -33,7 +33,7 @@ if (is_array(_t))
 	var _timeScale = _sharedTweener.timeScale;
 	var _timeScaleDelta = _sharedTweener.timeScaleDelta;
     
-    if (_t[TWEEN.STATE] != TWEEN_STATE.STOPPED && _timeScale != 0)
+    if (_t[TWEEN.STATE] != TWEEN_STATE.STOPPED and _timeScale != 0)
     {
         var _keepPaused = _t[TWEEN.STATE] == TWEEN_STATE.PAUSED;
         
@@ -74,7 +74,7 @@ if (is_array(_t))
         var _duration = _t[TWEEN.DURATION];
         
         // IF tween is within start/destination
-        if (_time > 0 && _time < _duration)
+        if (_time > 0 and _time < _duration)
         {
             // Assign updated time
             _t[@ TWEEN.TIME] = _time;
