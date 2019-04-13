@@ -1511,6 +1511,14 @@
             }
         },
         {
+            "Key": "624eaf2e-979b-4d86-b241-8f3d28c33e4d",
+            "Value": {
+                "id": "dcf0fb25-fa87-4a70-ac91-b4d60e95b158",
+                "resourcePath": "scripts\\emit_dust\\emit_dust.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "625630ef-bafc-4403-84b1-7a1016cc66d1",
             "Value": {
                 "id": "e1da00ca-f51b-4dc6-84f3-2f1277084c80",
@@ -1530,7 +1538,7 @@
             "Key": "63c538e5-a396-4509-bee2-8efca04d5c8d",
             "Value": {
                 "id": "3c9a8199-2dec-459e-865b-249f53de43d7",
-                "resourcePath": "sprites\\s_slope45\\s_slope45.yy",
+                "resourcePath": "sprites\\s_slope45R\\s_slope45R.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2287,6 +2295,14 @@
             }
         },
         {
+            "Key": "8da14f26-d92e-48b2-9669-aabbf3506efa",
+            "Value": {
+                "id": "6d266c27-b39a-4209-8ea1-394e89b5b21f",
+                "resourcePath": "sprites\\s_slope45L\\s_slope45L.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8da99694-3c94-45c6-8c04-7b3d438f2835",
             "Value": {
                 "id": "9d586925-4da2-441f-a498-6b64fe1a63f0",
@@ -2439,6 +2455,14 @@
             }
         },
         {
+            "Key": "96d7cb03-0140-443b-97c8-99cbb9228f94",
+            "Value": {
+                "id": "026658e5-4f75-439c-b52c-c967f3829008",
+                "resourcePath": "sprites\\s_slope30R\\s_slope30R.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97145384-7cec-44b3-84f1-86cb2c0e57b8",
             "Value": {
                 "id": "da14831a-3179-4bf5-b9c8-5720a2a7fb64",
@@ -2449,8 +2473,8 @@
         {
             "Key": "97d16cd9-6baa-4a95-8d90-87d26ff83234",
             "Value": {
-                "id": "a78380d8-a11d-44bc-93b4-0752279783d5",
-                "resourcePath": "objects\\o_slope45\\o_slope45.yy",
+                "id": "5452ce26-2381-43f7-bbae-28109e6020f7",
+                "resourcePath": "objects\\o_slope45R\\o_slope45R.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3055,6 +3079,14 @@
             }
         },
         {
+            "Key": "bdd59432-4783-4c6c-af11-7b717648e35c",
+            "Value": {
+                "id": "a87bcc69-e908-4422-a6fd-e8e24c2ccf06",
+                "resourcePath": "objects\\o_slope45L\\o_slope45L.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "be1d2f37-b012-412b-b138-bcb865f3b813",
             "Value": {
                 "id": "2d0a4616-cd45-4051-887a-7cdfe382f632",
@@ -3295,6 +3327,14 @@
             }
         },
         {
+            "Key": "d014275b-04c3-4883-8062-9182478babf8",
+            "Value": {
+                "id": "25e1827e-61d6-4890-9c51-93d469a65958",
+                "resourcePath": "sprites\\s_slope30L\\s_slope30L.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d05e9088-f969-4cef-aa1e-939481e4ade7",
             "Value": {
                 "id": "b345ca95-2801-4fef-ab63-060fb0a4340c",
@@ -3516,6 +3556,14 @@
                 "id": "c847a72d-ef2e-4b17-b383-86da2889bd31",
                 "resourcePath": "scripts\\SharedTweenerDestroy\\SharedTweenerDestroy.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dfd2a8e1-2fb2-4439-9f94-70a0ed05021e",
+            "Value": {
+                "id": "53e697ad-3e76-4736-bafd-736af8423b68",
+                "resourcePath": "objects\\o_slope30R\\o_slope30R.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3767,6 +3815,14 @@
             }
         },
         {
+            "Key": "f46fd670-431a-4ccd-86ff-fe7962f622ea",
+            "Value": {
+                "id": "1c20c9a2-6793-4793-80f3-c0af87d7a8de",
+                "resourcePath": "objects\\o_slope30L\\o_slope30L.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f553f8c3-4026-4cd8-b87f-208e6c6504f5",
             "Value": {
                 "id": "7ab1e7ad-059d-4310-95ed-8862b686b40c",
@@ -3990,6 +4046,7 @@
         "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
         "2d222553-bce3-48c0-85fc-e3c1ad505dff",
         "06137996-5e58-432d-8ff4-eaf74aa484e4",
+        "624eaf2e-979b-4d86-b241-8f3d28c33e4d",
         "12dc6100-c7fd-48ce-85fb-5dce60017eb3",
         "bdbbd716-e744-480a-9db7-ca77ab3842c3",
         "0ebccb1e-5f8c-4b68-8f91-616e6ea73868",

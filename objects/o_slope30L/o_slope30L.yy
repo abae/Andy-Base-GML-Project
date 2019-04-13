@@ -1,18 +1,18 @@
 {
-    "id": "97d16cd9-6baa-4a95-8d90-87d26ff83234",
+    "id": "f46fd670-431a-4ccd-86ff-fe7962f622ea",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_slope45",
+    "name": "o_slope30L",
     "eventList": [
         {
-            "id": "1679e06f-c84d-4feb-895c-7d4f76fc21e3",
+            "id": "2aeba235-1969-454f-9a75-46133dce8cc3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "97d16cd9-6baa-4a95-8d90-87d26ff83234"
+            "m_owner": "f46fd670-431a-4ccd-86ff-fe7962f622ea"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "63c538e5-a396-4509-bee2-8efca04d5c8d",
+    "spriteId": "d014275b-04c3-4883-8062-9182478babf8",
     "visible": true
 }
