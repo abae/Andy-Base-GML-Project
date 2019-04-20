@@ -1735,14 +1735,6 @@
             }
         },
         {
-            "Key": "6aee11f3-3352-48d2-885b-3a57912e9227",
-            "Value": {
-                "id": "68aa63ba-18fc-4ad2-b016-4b0d9d144358",
-                "resourcePath": "objects\\o_pause\\o_pause.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "6c059270-2efd-43c1-ab15-1a0f3e12454b",
             "Value": {
                 "id": "6ec91660-651f-4d23-bdb6-3cd31c2f38b4",

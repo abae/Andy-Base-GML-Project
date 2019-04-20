@@ -1,4 +1,7 @@
 dev = true;
+paused = false;
+screenshot = -1;
+
 #macro TILE_SIZE 16
 
 resolution_set();
