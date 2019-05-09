@@ -35,3 +35,6 @@ repeat(abs(vx)) {
     else
         vx = 0;
 }
+
+vx_prev = vx;
+vy_prev = vy;

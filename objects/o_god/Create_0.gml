@@ -1,10 +1,11 @@
-dev = true;
+dev = false;
 paused = false;
 screenshot = -1;
 
-#macro TILE_SIZE 16
+//Macros
 
 resolution_set();
+randomize();
 
 global.cutscene = false;
 global.transition_type = "fade";

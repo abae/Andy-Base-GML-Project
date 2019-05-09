@@ -969,7 +969,7 @@
         {
             "Key": "3faff2e3-4c94-4429-a512-d5c3e996fd5e",
             "Value": {
-                "id": "872b995f-c229-42e2-b3e3-8abe3fcb8fab",
+                "id": "22397530-67c5-4f40-a00c-66193937c2f1",
                 "resourcePath": "sprites\\s_splash\\s_splash.yy",
                 "resourceType": "GMSprite"
             }
@@ -1884,6 +1884,14 @@
                 "id": "7856f433-71cc-45bb-916f-6b917f1c828a",
                 "resourcePath": "scripts\\cutscene_instance_destroy\\cutscene_instance_destroy.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "752720db-f173-4fe8-9f60-f7927cd185b6",
+            "Value": {
+                "id": "812404a2-5e10-4ac7-a035-38bba007f521",
+                "resourcePath": "fonts\\fnt_pixel16\\fnt_pixel16.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -3252,6 +3260,14 @@
                 "id": "91573e00-c65c-4360-84a3-c922b91fcff7",
                 "resourcePath": "scripts\\EaseLinear\\EaseLinear.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cb0b078e-5ae1-4787-8065-ffef3213ac67",
+            "Value": {
+                "id": "294fda56-ad12-4db4-9d06-43e7981ff5f1",
+                "resourcePath": "fonts\\fnt_pixel32\\fnt_pixel32.yy",
+                "resourceType": "GMFont"
             }
         },
         {

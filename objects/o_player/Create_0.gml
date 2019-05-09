@@ -6,7 +6,6 @@ event_inherited();
 movespeed = 3;
 accel = 1;
 air_accel = .5;
-frc = .3;
 jumpspeed = 8;
 grav = .5;
 vari_jump_accel = .2;
@@ -38,3 +37,4 @@ state = states.normal
 xscale = 1;
 yscale = 1;
 facing = image_xscale; // Change xscale in editor to adjust initial facing
+dust_buffer = room_speed;

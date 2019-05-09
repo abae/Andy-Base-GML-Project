@@ -26,3 +26,18 @@ if (keyboard_check_pressed(vk_escape)){
         instance_activate_all();
     }
 }
+//pause options
+if (paused){
+	if(keyboard_check_pressed(ord("R"))){
+		paused = !paused
+		if (sprite_exists(screenshot)) sprite_delete(screenshot);
+        instance_activate_all();
+		transition("slide",TRANS_MODE.RRESTART);
+	}
+	if(keyboard_check_pressed(ord("X"))){
+		paused = !paused
+		if (sprite_exists(screenshot)) sprite_delete(screenshot);
+        instance_activate_all();
+		transition("fade",TRANS_MODE.GOTO,rm_menu);
+	}
+}
