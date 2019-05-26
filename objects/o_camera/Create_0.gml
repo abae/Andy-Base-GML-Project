@@ -19,7 +19,7 @@ yTo = ystart;
 shake_length = 0;
 shake_magnitude = 0;
 shake_remain = 0;
-buff = 8;
+buff = 0;
 
 //zoom and move
 if (room == rm_menu) zoom_level = 1;
