@@ -106,7 +106,7 @@
             "Key": "05809b15-6865-4850-8fbb-b5ea70848691",
             "Value": {
                 "id": "c781a8a4-a871-4dfe-a942-8d188c57a5a3",
-                "resourcePath": "scripts\/_grounded\/_grounded.yy",
+                "resourcePath": "scripts/_grounded/_grounded.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4028,6 +4028,22 @@
                 "id": "a8674b52-e64a-4c59-b147-7aa0490d5a32",
                 "resourcePath": "sounds\\sfx_init\\sfx_init.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "73f4330b-57d7-2cdb-b6c2-f50fe98e7f6b",
+            "Value": {
+                "id": "7d1cf46d-d55a-51ab-4a46-7a79127e8185",
+                "resourcePath": "views\\73f4330b-57d7-2cdb-b6c2-f50fe98e7f6b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b332650-332f-f8c7-aa88-a02baa16e624",
+            "Value": {
+                "id": "f0c174e4-13ff-3da5-17ac-9b5327ef1360",
+                "resourcePath": "scripts\\animation_end\\animation_end.yy",
+                "resourceType": "GMScript"
             }
         }
     ],
