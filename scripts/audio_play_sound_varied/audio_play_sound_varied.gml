@@ -4,9 +4,4 @@
 ///@arg looping
 
 var s = audio_play_sound(argument0,argument1,argument2);
-audio_sound_pitch(s,random_range(.8,1.1));
-
-if (global.hp<=0)
-{
-	audio_sound_pitch(s,random_range(.4,1.5));
-}
+audio_sound_pitch(s,random_range(.9,1.1));

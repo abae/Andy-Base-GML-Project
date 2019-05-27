@@ -10,7 +10,8 @@
         "0e2f81fd-8f76-40b1-9289-ae96afa91b61",
         "4e33e454-728d-45bd-b130-c251d3de3ece",
         "692166b6-a444-48f5-8c5f-3f7cb43ea761",
-        "64d53875-7a49-4f7c-962d-1156eee6f67d"
+        "64d53875-7a49-4f7c-962d-1156eee6f67d",
+        "83b02ab8-c4fe-9a40-1e26-788d569891d3"
     ],
     "filterType": "GMScript",
     "folderName": "QOL",

@@ -1,4 +1,4 @@
-/// @description  seconds_to_time_string(seconds,rounded)
+/// @description seconds_to_time_string(seconds,rounded)
 /// @param seconds
 /// @param rounded
 var sec_input, seconds, minutes, hours, timestring, hourstring, minutestring, secondstring, roundit;
@@ -11,15 +11,17 @@ if !roundit
 else seconds = round((sec_input-minutes*60-hours*60*60))
 hourstring = string(hours)
 if string_length(hourstring) == 1
-   hourstring = string_insert("0", hourstring, 0)
+hourstring = string_insert("0", hourstring, 0)
 minutestring = string(minutes)
 if string_length(minutestring) == 1
-   minutestring = string_insert("0", minutestring, 0)
-secondstring = string(seconds)
+minutestring = string_insert("0", minutestring, 0)
+if seconds mod 1 = 0
+secondstring = string(seconds)+".00"
+else secondstring = string(seconds)
 if seconds < 10
-   secondstring = string_insert("0", secondstring, 0)
+secondstring = string_insert("0", secondstring, 0)
 if hours > 0
-   timestring = hourstring + ":" + minutestring + ":" + secondstring
+timestring = hourstring + ":" + minutestring + ":" + secondstring
 else
-   timestring = minutestring + ":" + secondstring
+timestring = minutestring + ":" + secondstring
 return timestring

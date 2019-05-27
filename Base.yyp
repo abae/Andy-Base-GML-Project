@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "3bc4d62a-7eb2-3f67-3ffb-0c3c16f7811e",
+            "Value": {
+                "id": "d46681b0-a587-ee4e-66b6-c6c13b074568",
+                "resourcePath": "scripts\\_game_init\\_game_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3bda7a27-6ad6-412e-988a-aa2ca7e7fd2f",
             "Value": {
                 "id": "728a8844-11fd-4743-89a1-a5e56473dce7",
@@ -980,6 +988,14 @@
                 "id": "b8fd3227-f324-4d15-978f-0d514a9ba821",
                 "resourcePath": "views\\4211c45e-7666-4bf4-84a9-61fc90357854.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "423122e0-7656-c803-6138-97a636c177e2",
+            "Value": {
+                "id": "bd44f353-d67e-8c4b-38b0-6b79a1d31f5e",
+                "resourcePath": "scripts\\MACROS\\MACROS.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2095,6 +2111,14 @@
             }
         },
         {
+            "Key": "83b02ab8-c4fe-9a40-1e26-788d569891d3",
+            "Value": {
+                "id": "4d09abe0-59c9-1bf5-e816-f6761f7ce72f",
+                "resourcePath": "scripts\\mouse_click\\mouse_click.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "83b20320-8690-4dfe-8ae2-fb5b1f48b44d",
             "Value": {
                 "id": "8b214f6a-c645-4fb2-a5a3-46af50146bc4",
@@ -2443,6 +2467,14 @@
             "Value": {
                 "id": "29c06de6-6dd2-446e-9feb-6a065f3e0999",
                 "resourcePath": "scripts\\light_create_spot\\light_create_spot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "96686b0b-df77-0f8e-3ec0-bd1b14f09860",
+            "Value": {
+                "id": "4d4ea6af-575e-a30f-d32a-6559ed510da1",
+                "resourcePath": "scripts\\place_meeting_any\\place_meeting_any.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3922,7 +3954,7 @@
             "Key": "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
             "Value": {
                 "id": "299a029c-7ac2-42a5-b199-99f0df4dcefa",
-                "resourcePath": "scripts\\play_sound_varied\\play_sound_varied.yy",
+                "resourcePath": "scripts\/audio_play_sound_varied\/audio_play_sound_varied.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4032,6 +4064,8 @@
         }
     ],
     "script_order": [
+        "423122e0-7656-c803-6138-97a636c177e2",
+        "3bc4d62a-7eb2-3f67-3ffb-0c3c16f7811e",
         "f1751ddd-c943-456a-886b-0cf7ef67c067",
         "90020803-894d-4c04-ab2a-a23762ca3615",
         "5361fb7f-8b1a-4dd2-beb8-572a15e40b4d",
@@ -4072,6 +4106,7 @@
         "4e33e454-728d-45bd-b130-c251d3de3ece",
         "692166b6-a444-48f5-8c5f-3f7cb43ea761",
         "64d53875-7a49-4f7c-962d-1156eee6f67d",
+        "83b02ab8-c4fe-9a40-1e26-788d569891d3",
         "8b86078d-8ce8-409b-be70-352bc01e9ea2",
         "59c49054-8756-410d-8781-0eebaada69da",
         "ab2d16a8-4370-4ca8-9098-af828e043d0e",
@@ -4080,6 +4115,7 @@
         "85ea4546-1c41-49d7-a602-7dfff873e067",
         "9cc08660-734a-4383-bc21-0cc8d2fe5140",
         "95805ca7-a977-4890-9a51-fda947db1ff1",
+        "96686b0b-df77-0f8e-3ec0-bd1b14f09860",
         "bf8b8bf1-43c9-4f10-98c7-49dd5c63cc42",
         "e197a1d0-186b-43e0-bc32-51bdc7d8a32f",
         "43cb4639-7273-4707-b323-62b592842766",

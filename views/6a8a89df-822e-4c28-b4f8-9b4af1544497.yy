@@ -8,7 +8,8 @@
         "3ce98d66-1102-4157-bd42-dde5dd3b1643",
         "85ea4546-1c41-49d7-a602-7dfff873e067",
         "9cc08660-734a-4383-bc21-0cc8d2fe5140",
-        "95805ca7-a977-4890-9a51-fda947db1ff1"
+        "95805ca7-a977-4890-9a51-fda947db1ff1",
+        "96686b0b-df77-0f8e-3ec0-bd1b14f09860"
     ],
     "filterType": "GMScript",
     "folderName": "instance",
