@@ -1,15 +1,15 @@
 //get player input
 if (menu_control){
 	//keyboard control of menu
-	if (iUP_P){
+	if (global.pUp){
 		menu_cursor++;
 		if (menu_cursor >= menu_items) menu_cursor = 0;
 	}
-	if (iDOWN_P){
+	if (global.pDown){
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items - 1;
 	}
-	if (iSELECT{
+	if (global.pSELECT{
 		menu_committed = menu_cursor;
 		menu_control = false;
 	}		
@@ -19,7 +19,7 @@ if (menu_control){
 	var mouse_y_gui = device_mouse_y_to_gui(0);
 	if ((mouse_y_gui < menu_y) and (mouse_y_gui > menu_top) and (between(mouse_x_gui,menu_x - gui_width/6,menu_x + gui_width/6))){
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
-		if (iMB_LEFT_P){
+		if (global.pMBLeft){
 			menu_committed = menu_cursor;
 			menu_control = false;
 		}

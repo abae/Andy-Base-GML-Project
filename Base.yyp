@@ -106,7 +106,7 @@
             "Key": "05809b15-6865-4850-8fbb-b5ea70848691",
             "Value": {
                 "id": "c781a8a4-a871-4dfe-a942-8d188c57a5a3",
-                "resourcePath": "scripts\/_grounded\/_grounded.yy",
+                "resourcePath": "scripts/_grounded/_grounded.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3954,7 +3954,7 @@
             "Key": "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
             "Value": {
                 "id": "299a029c-7ac2-42a5-b199-99f0df4dcefa",
-                "resourcePath": "scripts\/audio_play_sound_varied\/audio_play_sound_varied.yy",
+                "resourcePath": "scripts/audio_play_sound_varied/audio_play_sound_varied.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4060,6 +4060,14 @@
                 "id": "a8674b52-e64a-4c59-b147-7aa0490d5a32",
                 "resourcePath": "sounds\\sfx_init\\sfx_init.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "bd5c00f4-84f4-e904-c175-6a61a9b7dc7e",
+            "Value": {
+                "id": "19a93097-8033-703f-8d1a-654b36e06058",
+                "resourcePath": "scripts\\_global_input\\_global_input.yy",
+                "resourceType": "GMScript"
             }
         }
     ],
