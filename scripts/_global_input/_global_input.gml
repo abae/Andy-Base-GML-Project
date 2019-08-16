@@ -17,4 +17,4 @@ global.pMBLeft     = mouse_check_button_pressed(mb_left);
 global.rMBLeft     = mouse_check_button_released(mb_left);
 global.iMBRight    = mouse_check_button(mb_right);
 global.pMBRight    = mouse_check_button_pressed(mb_right);
-global.rMBRight    = mouse_check_button_released(mb_right);     =
+global.rMBRight    = mouse_check_button_released(mb_right);

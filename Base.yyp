@@ -106,7 +106,7 @@
             "Key": "05809b15-6865-4850-8fbb-b5ea70848691",
             "Value": {
                 "id": "c781a8a4-a871-4dfe-a942-8d188c57a5a3",
-                "resourcePath": "scripts/_grounded/_grounded.yy",
+                "resourcePath": "scripts\/_grounded\/_grounded.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1147,6 +1147,14 @@
             "Value": {
                 "id": "5b4f6318-d88b-48c2-b0be-06e94795a4c1",
                 "resourcePath": "scripts\\light_draw_shadow_map\\light_draw_shadow_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4b4191ec-33dc-f5fe-9d9b-6375f94f0944",
+            "Value": {
+                "id": "e348eae1-e653-8dff-45a9-a431af585ec5",
+                "resourcePath": "scripts\\cam_move\\cam_move.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3095,6 +3103,14 @@
             }
         },
         {
+            "Key": "bd5c00f4-84f4-e904-c175-6a61a9b7dc7e",
+            "Value": {
+                "id": "19a93097-8033-703f-8d1a-654b36e06058",
+                "resourcePath": "scripts\\_global_input\\_global_input.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bdbbd716-e744-480a-9db7-ca77ab3842c3",
             "Value": {
                 "id": "0870f990-456c-4591-a58f-f1663debd36b",
@@ -3954,7 +3970,7 @@
             "Key": "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
             "Value": {
                 "id": "299a029c-7ac2-42a5-b199-99f0df4dcefa",
-                "resourcePath": "scripts/audio_play_sound_varied/audio_play_sound_varied.yy",
+                "resourcePath": "scripts\/audio_play_sound_varied\/audio_play_sound_varied.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4061,27 +4077,12 @@
                 "resourcePath": "sounds\\sfx_init\\sfx_init.yy",
                 "resourceType": "GMSound"
             }
-        },
-        {
-            "Key": "bd5c00f4-84f4-e904-c175-6a61a9b7dc7e",
-            "Value": {
-                "id": "19a93097-8033-703f-8d1a-654b36e06058",
-                "resourcePath": "scripts\\_global_input\\_global_input.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4b4191ec-33dc-f5fe-9d9b-6375f94f0944",
-            "Value": {
-                "id": "e348eae1-e653-8dff-45a9-a431af585ec5",
-                "resourcePath": "scripts\\cam_move\\cam_move.yy",
-                "resourceType": "GMScript"
-            }
         }
     ],
     "script_order": [
         "423122e0-7656-c803-6138-97a636c177e2",
         "3bc4d62a-7eb2-3f67-3ffb-0c3c16f7811e",
+        "bd5c00f4-84f4-e904-c175-6a61a9b7dc7e",
         "f1751ddd-c943-456a-886b-0cf7ef67c067",
         "90020803-894d-4c04-ab2a-a23762ca3615",
         "5361fb7f-8b1a-4dd2-beb8-572a15e40b4d",
@@ -4105,6 +4106,7 @@
         "2d222553-bce3-48c0-85fc-e3c1ad505dff",
         "06137996-5e58-432d-8ff4-eaf74aa484e4",
         "624eaf2e-979b-4d86-b241-8f3d28c33e4d",
+        "4b4191ec-33dc-f5fe-9d9b-6375f94f0944",
         "6b332650-332f-f8c7-aa88-a02baa16e624",
         "12dc6100-c7fd-48ce-85fb-5dce60017eb3",
         "bdbbd716-e744-480a-9db7-ca77ab3842c3",

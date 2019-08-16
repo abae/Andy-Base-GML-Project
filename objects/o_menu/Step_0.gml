@@ -9,7 +9,7 @@ if (menu_control){
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items - 1;
 	}
-	if (global.pSELECT{
+	if (global.pSELECT){
 		menu_committed = menu_cursor;
 		menu_control = false;
 	}		
