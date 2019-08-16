@@ -2,8 +2,7 @@
 target_view = 0;
 cam = view_camera[target_view];
 if (instance_exists(o_player)) follow = o_player;
-else 
-{
+else {
     follow = -1;
     follow_x = room_width/2;
     follow_y = room_height/2;
@@ -22,12 +21,11 @@ shake_remain = 0;
 buff = 0;
 
 //zoom and move
-if (room == rm_menu) zoom_level = 1;
-else zoom_level = 1;
+zoom = 1;
 
 //interpolation rate
 zoom_rate = .05;
 move_rate = .1;
 
 //set camera
-camera_set_view_size(cam, zoom_level * orig_view_w, zoom_level * orig_view_h);
+camera_set_view_size(cam, zoom * orig_view_w, zoom * orig_view_h);

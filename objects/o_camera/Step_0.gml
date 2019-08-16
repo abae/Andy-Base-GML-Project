@@ -5,20 +5,17 @@ var vpos_w = camera_get_view_width(cam);
 var vpos_h = camera_get_view_height(cam);
 
 //Updating camera
-if (instance_exists(follow))
-{
+if (instance_exists(follow)){
 	xTo = follow.x;
 	yTo = follow.y;
-}
-else
-{
+}else{
     xTo = follow_x;
     yTo = follow_y;
 }
 
 #region //zoom
-var new_w = lerp(vpos_w, zoom_level * orig_view_w, zoom_rate);
-var new_h = lerp(vpos_h, zoom_level * orig_view_h, zoom_rate);
+var new_w = lerp(vpos_w, zoom * orig_view_w, zoom_rate);
+var new_h = lerp(vpos_h, zoom * orig_view_h, zoom_rate);
 
 //Zoom based on size
 camera_set_view_size(cam, new_w, new_h);

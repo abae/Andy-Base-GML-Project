@@ -4069,6 +4069,14 @@
                 "resourcePath": "scripts\\_global_input\\_global_input.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "4b4191ec-33dc-f5fe-9d9b-6375f94f0944",
+            "Value": {
+                "id": "e348eae1-e653-8dff-45a9-a431af585ec5",
+                "resourcePath": "scripts\\cam_move\\cam_move.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
