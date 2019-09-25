@@ -5,7 +5,7 @@ switch (state){
 	case states.normal: {
 		#region //horizontal movement
 		if (grounded){
-			vx = approach(vx,movespeed*(key_right-key_left),accel);
+			vx = approach(vx,movespeed*(global.iRight-global.iLeft),accel);
 			//dust
 			if (vx != 0 and sign(vx) != sign(vx_prev) and !nexttowall){
 				emit_dust(5,x,bbox_bottom,-sign(vx)*.5,-sign(vx)*2,-.5,0,depth-1,c_white);
@@ -19,13 +19,13 @@ switch (state){
 			//forgiveness mechanic
 			canjump = jump_buffer;
 		}else{
-			if (key_right and vx <= movespeed) vx = approach(vx,movespeed,air_accel);
-			if (key_left and vx >= -movespeed) vx = approach(vx,-movespeed,air_accel); 
+			if (global.iRight and vx <= movespeed) vx = approach(vx,movespeed,air_accel);
+			if (global.iLeft and vx >= -movespeed) vx = approach(vx,-movespeed,air_accel); 
 			canjump--;
 		}
 		#endregion
 		#region //jumping
-		if (key_jump and canjump>0){
+		if (global.pSpace and canjump>0){
 		    vy = -jumpspeed;
 		    xscale = 0.6;
 		    yscale = 1.5;
@@ -33,7 +33,7 @@ switch (state){
 		}
 		if (!grounded) {
 		    vy = approach(vy,vterm,grav);
-			if (!key_jump_held) vy = approach(vy,vterm, vari_jump_accel);
+			if (!global.iSpace) vy = approach(vy,vterm, vari_jump_accel);
 			//stretch
 			if (vy>0){
     			xscale = 1-.15*(abs(vy/vterm));

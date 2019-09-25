@@ -1,5 +1,7 @@
 gml_pragma("global", "MACROS()");
 
+#macro BIG 9999999999999
+
 #macro RES_W 640
 #macro RES_H 360
 

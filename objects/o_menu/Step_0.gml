@@ -15,10 +15,8 @@ if (menu_control){
 	}		
 	
 	//mouse control of menu
-	var mouse_x_gui = device_mouse_x_to_gui(0);
-	var mouse_y_gui = device_mouse_y_to_gui(0);
-	if ((mouse_y_gui < menu_y) and (mouse_y_gui > menu_top) and (between(mouse_x_gui,menu_x - gui_width/6,menu_x + gui_width/6))){
-		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);
+	if ((mouse_y < menu_y) and (mouse_y > menu_top) and (between(mouse_x,menu_x - GUIWIDTH/6,menu_x + GUIWIDTH/6))){
+		menu_cursor = (menu_y - mouse_y) div (menu_itemheight * 1.5);
 		if (global.pMBLeft){
 			menu_committed = menu_cursor;
 			menu_control = false;
