@@ -4,8 +4,8 @@ dev_draw = false;
 paused = false;
 screenshot = -1;
 
-//Macros
 
+scribble_init("fonts","fnt_pixel16",true);
 resolution_set();
 randomize();
 
