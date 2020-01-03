@@ -3,9 +3,7 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [
-        
-    ],
+    "configs": [],
     "option_ecma": false,
     "parentProject": {
         "id": "6f5a044e-ae2a-484a-9bed-73473d554ef3",
@@ -24,9 +22,7 @@
                 }
             }
         ],
-        "hiddenResources": [
-            
-        ],
+        "hiddenResources": [],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -146,7 +142,7 @@
             "Key": "05809b15-6865-4850-8fbb-b5ea70848691",
             "Value": {
                 "id": "c781a8a4-a871-4dfe-a942-8d188c57a5a3",
-                "resourcePath": "scripts\/_grounded\/_grounded.yy",
+                "resourcePath": "scripts/_grounded/_grounded.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -431,6 +427,14 @@
             }
         },
         {
+            "Key": "18bac41f-cdc5-434b-b3b5-8d25262a9dcb",
+            "Value": {
+                "id": "5700a070-3a53-4572-a988-edec35774033",
+                "resourcePath": "scripts\\app_surf_shader_set\\app_surf_shader_set.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19ae1a70-fbf6-44ba-afc5-d81f7877a6ed",
             "Value": {
                 "id": "0e78b4b4-d5d4-422d-be82-a3e90e7a6c77",
@@ -612,14 +616,6 @@
                 "id": "bf8f4a02-9d03-4c8c-8979-9b4aec5cbd23",
                 "resourcePath": "scripts\\scribble_autotype_get\\scribble_autotype_get.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "24db3b77-cb92-4a07-8dd6-10b9b5cd3c3a",
-            "Value": {
-                "id": "8386d207-ee14-4197-a5c2-26c954301ed2",
-                "resourcePath": "datafiles_yy\\TweenGMS\\Update Log.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -868,6 +864,14 @@
                 "id": "3784e616-35c3-4377-b2d2-a263174c629f",
                 "resourcePath": "scripts\\scribble_add_font\\scribble_add_font.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "38228939-a48a-4557-a067-a69367ca3d1d",
+            "Value": {
+                "id": "2e1c3a6b-765b-4e3e-be76-fceb7f96787c",
+                "resourcePath": "objects\\o_app_surf\\o_app_surf.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1527,14 +1531,6 @@
             }
         },
         {
-            "Key": "699a23cd-b8a7-4b8f-8a17-63d2fbbae529",
-            "Value": {
-                "id": "fd5c3a43-d50a-4851-bad9-32355ba4ed3a",
-                "resourcePath": "datafiles_yy\\TweenGMS\\Starter Guide.html.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "69bce722-cc82-4190-8d76-278a050d51a5",
             "Value": {
                 "id": "edee98e6-a2dd-4870-9480-4a58c2b73cb6",
@@ -1644,6 +1640,14 @@
                 "id": "987a2ffb-3043-4cfa-9d01-45aa29173bec",
                 "resourcePath": "views\\701c36f3-ef38-4160-ab87-4fa4d2abff40.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "702371ff-4688-4c7f-98a5-391da2756c5d",
+            "Value": {
+                "id": "aaec9454-779b-4b79-a6f6-bb397b19fcdc",
+                "resourcePath": "scripts\\draw_sprite_pie\\draw_sprite_pie.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1852,6 +1856,14 @@
                 "id": "5e69d4cd-5398-430a-8ea3-639812d5a509",
                 "resourcePath": "scripts\\shadow_map_ensure_exists\\shadow_map_ensure_exists.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7f0d0c23-fe4a-4966-9502-1c93b0b2aada",
+            "Value": {
+                "id": "2eca87dc-902f-4b82-b445-013fef9287e3",
+                "resourcePath": "objects\\o_distortions\\o_distortions.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2631,6 +2643,14 @@
             }
         },
         {
+            "Key": "b160d7a0-0390-4bee-88d4-4fc46eb4cdfa",
+            "Value": {
+                "id": "e704ee16-1cb9-450e-937b-abdd81836869",
+                "resourcePath": "views\\b160d7a0-0390-4bee-88d4-4fc46eb4cdfa.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b1da795c-9d6f-4f5e-ac6e-9e6f25a1b12e",
             "Value": {
                 "id": "b72c7c55-f5f3-4e4e-bfca-7fef9dbcf032",
@@ -2780,6 +2800,14 @@
                 "id": "418813e9-062f-44b2-a429-50059a9886f6",
                 "resourcePath": "scripts\\cross_product\\cross_product.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "baaae172-6cac-4067-adc8-4cb38d24d796",
+            "Value": {
+                "id": "5346a643-10c8-4d3d-a142-44d2e8f014aa",
+                "resourcePath": "views\\baaae172-6cac-4067-adc8-4cb38d24d796.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3383,14 +3411,6 @@
             }
         },
         {
-            "Key": "ec6ae6e2-ce39-486d-82ee-e4ea5dcf2acb",
-            "Value": {
-                "id": "1007169f-5327-410d-bcf7-1833bb8afbbc",
-                "resourcePath": "datafiles_yy\\TweenGMS\\Safe To Delete Scripts.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "ee1a4a3e-73a5-47a2-b997-1ac34352d449",
             "Value": {
                 "id": "67496c46-6536-4ca6-97b1-8b8cf974f8bf",
@@ -3404,14 +3424,6 @@
                 "id": "ace5d3a6-b8ec-4631-8f89-babf95208432",
                 "resourcePath": "objects\\o_textbox\\o_textbox.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "efce0b1e-98c8-45a5-a3e4-fb906a3a580e",
-            "Value": {
-                "id": "2eb066c0-18f6-4f44-845a-5a151ef43102",
-                "resourcePath": "datafiles_yy\\TweenGMS\\Script Reference.html.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -3543,18 +3555,10 @@
             }
         },
         {
-            "Key": "fa7d58e0-3836-4848-b280-f183e03ea9c9",
-            "Value": {
-                "id": "dc85302d-157a-469d-9497-6e450670d3c4",
-                "resourcePath": "datafiles_yy\\TweenGMS\\Demo Projects.txt.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
             "Value": {
                 "id": "299a029c-7ac2-42a5-b199-99f0df4dcefa",
-                "resourcePath": "scripts\/audio_play_sound_varied\/audio_play_sound_varied.yy",
+                "resourcePath": "scripts/audio_play_sound_varied/audio_play_sound_varied.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3628,6 +3632,22 @@
                 "id": "5cd06c77-5749-45f7-85ce-621c9608b034",
                 "resourcePath": "scripts\\gmws_send_control_pong\\gmws_send_control_pong.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "24b4e32f-19cb-43e3-9c3b-fdc84930f705",
+            "Value": {
+                "id": "7b2ab6f7-5cc8-4027-a67f-2a6f5bf0b07a",
+                "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "7883eb57-a188-4556-beb8-aa08b17ae11c",
+            "Value": {
+                "id": "447083ed-5113-4b8a-8684-3cc9bf407168",
+                "resourcePath": "extensions\\display_mouse_lock\\display_mouse_lock.yy",
+                "resourceType": "GMExtension"
             }
         }
     ],
@@ -3754,9 +3774,11 @@
         "90949fe6-4101-4b09-8caf-6682a5251c19",
         "fdc752e0-bb32-4720-8580-4cfcf201729f",
         "0b429aa8-463a-d7e9-df9e-f53fd39ad7cb",
+        "702371ff-4688-4c7f-98a5-391da2756c5d",
         "2e9fae5b-cf48-4cc9-ba90-6965b94044f5",
         "951656e9-e9d5-4f2c-949c-b998fd925733",
         "c0e7120e-91dc-49a1-8074-6f8e0d07f961",
+        "18bac41f-cdc5-434b-b3b5-8d25262a9dcb",
         "7abe1df3-2c53-4404-90cf-73f83e8f2375",
         "58a7e5e8-053a-45ad-9f84-75e4d05603c9",
         "0c9af519-9418-4874-9196-da831e956654",
