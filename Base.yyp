@@ -3,7 +3,9 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [],
+    "configs": [
+        
+    ],
     "option_ecma": false,
     "parentProject": {
         "id": "6f5a044e-ae2a-484a-9bed-73473d554ef3",
@@ -22,7 +24,9 @@
                 }
             }
         ],
-        "hiddenResources": [],
+        "hiddenResources": [
+            
+        ],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -3640,14 +3644,6 @@
                 "id": "7b2ab6f7-5cc8-4027-a67f-2a6f5bf0b07a",
                 "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
                 "resourceType": "GMShader"
-            }
-        },
-        {
-            "Key": "7883eb57-a188-4556-beb8-aa08b17ae11c",
-            "Value": {
-                "id": "447083ed-5113-4b8a-8684-3cc9bf407168",
-                "resourcePath": "extensions\\display_mouse_lock\\display_mouse_lock.yy",
-                "resourceType": "GMExtension"
             }
         }
     ],
