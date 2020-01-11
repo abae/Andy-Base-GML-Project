@@ -4,11 +4,11 @@
 
 with (o_camera)
 {
-	if (argument0 > shake_remain)
+	if (argument0 > shakeRemain)
 	{
-		shake_magnitude = argument0;
-		shake_remain = argument0;
-		shake_length = argument1;
+		shakeMagnitude = argument0;
+		shakeRemain = argument0;
+		shakeLength = argument1;
 	}
 }
 

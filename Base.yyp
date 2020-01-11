@@ -3,7 +3,9 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [],
+    "configs": [
+        
+    ],
     "option_ecma": false,
     "parentProject": {
         "id": "6f5a044e-ae2a-484a-9bed-73473d554ef3",
@@ -22,7 +24,9 @@
                 }
             }
         ],
-        "hiddenResources": [],
+        "hiddenResources": [
+            
+        ],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -142,7 +146,7 @@
             "Key": "05809b15-6865-4850-8fbb-b5ea70848691",
             "Value": {
                 "id": "c781a8a4-a871-4dfe-a942-8d188c57a5a3",
-                "resourcePath": "scripts/_grounded/_grounded.yy",
+                "resourcePath": "scripts\/_grounded\/_grounded.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -285,7 +289,7 @@
         {
             "Key": "0c9af519-9418-4874-9196-da831e956654",
             "Value": {
-                "id": "838fe23d-07c9-4a1e-ae87-ac8531f17ab9",
+                "id": "82e89bac-d74c-4cdd-a556-b496a48a36bb",
                 "resourcePath": "scripts\\resolution_set\\resolution_set.yy",
                 "resourceType": "GMScript"
             }
@@ -616,6 +620,14 @@
                 "id": "bf8f4a02-9d03-4c8c-8979-9b4aec5cbd23",
                 "resourcePath": "scripts\\scribble_autotype_get\\scribble_autotype_get.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "24b4e32f-19cb-43e3-9c3b-fdc84930f705",
+            "Value": {
+                "id": "7b2ab6f7-5cc8-4027-a67f-2a6f5bf0b07a",
+                "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1736,6 +1748,14 @@
                 "id": "576e60d7-29d0-4a04-aa05-7a531a6cb18b",
                 "resourcePath": "sprites\\s_tile_wall\\s_tile_wall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7883eb57-a188-4556-beb8-aa08b17ae11c",
+            "Value": {
+                "id": "447083ed-5113-4b8a-8684-3cc9bf407168",
+                "resourcePath": "extensions\\display_mouse_lock\\display_mouse_lock.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -3558,7 +3578,7 @@
             "Key": "fab9bc42-1777-41f9-886a-8a7d7c5f8c95",
             "Value": {
                 "id": "299a029c-7ac2-42a5-b199-99f0df4dcefa",
-                "resourcePath": "scripts/audio_play_sound_varied/audio_play_sound_varied.yy",
+                "resourcePath": "scripts\/audio_play_sound_varied\/audio_play_sound_varied.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3632,22 +3652,6 @@
                 "id": "5cd06c77-5749-45f7-85ce-621c9608b034",
                 "resourcePath": "scripts\\gmws_send_control_pong\\gmws_send_control_pong.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "24b4e32f-19cb-43e3-9c3b-fdc84930f705",
-            "Value": {
-                "id": "7b2ab6f7-5cc8-4027-a67f-2a6f5bf0b07a",
-                "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
-            "Key": "7883eb57-a188-4556-beb8-aa08b17ae11c",
-            "Value": {
-                "id": "447083ed-5113-4b8a-8684-3cc9bf407168",
-                "resourcePath": "extensions\\display_mouse_lock\\display_mouse_lock.yy",
-                "resourceType": "GMExtension"
             }
         }
     ],
@@ -3781,8 +3785,8 @@
         "18bac41f-cdc5-434b-b3b5-8d25262a9dcb",
         "7abe1df3-2c53-4404-90cf-73f83e8f2375",
         "58a7e5e8-053a-45ad-9f84-75e4d05603c9",
-        "0c9af519-9418-4874-9196-da831e956654",
         "99eaff98-bda1-4317-a6e3-45e5706b5348",
+        "0c9af519-9418-4874-9196-da831e956654",
         "05809b15-6865-4850-8fbb-b5ea70848691",
         "49fd72d7-2d84-4aaf-928e-c0a7c23a9057",
         "b1da795c-9d6f-4f5e-ac6e-9e6f25a1b12e",

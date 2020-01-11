@@ -7,20 +7,20 @@ switch (state){
 		if (grounded){
 			vx = approach(vx,movespeed*(global.iRight-global.iLeft),accel);
 			//dust
-			if (vx != 0 and sign(vx) != sign(vx_prev) and !nexttowall){
+			if (vx != 0 and sign(vx) != sign(vx_prev) and !nextToWall){
 				emit_dust(5,x,bbox_bottom,-sign(vx)*.5,-sign(vx)*2,-.5,0,depth-1,c_white);
 			}
-			if (abs(vx) >= movespeed/2) dust_buffer--;
-			else dust_buffer = random_range(20,30);
-			if (dust_buffer <= 0){
+			if (abs(vx) >= movespeed/2) dustBuffer--;
+			else dustBuffer = random_range(20,30);
+			if (dustBuffer <= 0){
 				emit_dust(2,x,bbox_bottom,-sign(vx)*.5,-sign(vx)*2,-.5,0,depth-1,c_white);
-				dust_buffer = random_range(20,30);
+				dustBuffer = random_range(20,30);
 			}
 			//forgiveness mechanic
-			canjump = jump_buffer;
+			canjump = jumpBuffer;
 		}else{
-			if (global.iRight and vx <= movespeed) vx = approach(vx,movespeed,air_accel);
-			if (global.iLeft and vx >= -movespeed) vx = approach(vx,-movespeed,air_accel); 
+			if (global.iRight and vx <= movespeed) vx = approach(vx,movespeed,airAccel);
+			if (global.iLeft and vx >= -movespeed) vx = approach(vx,-movespeed,airAccel); 
 			canjump--;
 		}
 		#endregion
@@ -33,7 +33,7 @@ switch (state){
 		}
 		if (!grounded) {
 		    vy = approach(vy,vterm,grav);
-			if (!global.iSpace) vy = approach(vy,vterm, vari_jump_accel);
+			if (!global.iSpace) vy = approach(vy,vterm, variJumpAccel);
 			//stretch
 			if (vy>0){
     			xscale = 1-.15*(abs(vy/vterm));

@@ -5,21 +5,21 @@ event_inherited();
 // Movement ///////////////////////////////////////////////////////////////////
 movespeed = 3;
 accel = 1;
-air_accel = .5;
+airAccel = .5;
 jumpspeed = 8;
 grav = .5;
-vari_jump_accel = .2;
+variJumpAccel = .2;
 vterm = 7;
 grounded = false;
 
 // Forgiveness mechanic
 canjump = 0;
-jump_buffer = 5; //amount of frames for forgiveness
+jumpBuffer = 5; //amount of frames for forgiveness
 
 //taking damage
 damage = 0; //damage value
-invulnerable = false;
-damage_timer = room_speed * .75;
+damagetime = room_speed * .75;
+damagetimer = damagetime
 global.maxhp = 100;
 global.hp = global.maxhp;
 
@@ -37,4 +37,4 @@ state = states.normal
 xscale = 1;
 yscale = 1;
 facing = image_xscale; // Change xscale in editor to adjust initial facing
-dust_buffer = room_speed;
+dustBuffer = room_speed;

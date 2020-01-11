@@ -1,10 +1,10 @@
 // Handle sub-pixel movement
 cx += vx;
 cy += vy;
-vxNew = round(cx);
-vyNew = round(cy);
-cx -= vxNew;
-cy -= vyNew;
+vx = round(cx);
+vy = round(cy);
+cx -= vx;
+cy -= vy;
 
 entity_step();
 

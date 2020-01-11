@@ -4,7 +4,7 @@ landed = false;
 platformTarget = 0;
 wallTarget     = 0;
 
-nexttowall = false;
+nextToWall = false;
 
 // Velocity
 vx = 0;

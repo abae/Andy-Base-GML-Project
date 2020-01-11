@@ -1,42 +1,42 @@
 //get player input
-if (menu_control){
+if (menuControl){
 	//keyboard control of menu
 	if (global.pUp){
-		menu_cursor++;
-		if (menu_cursor >= menu_items) menu_cursor = 0;
+		menuCursor++;
+		if (menuCursor >= menuItems) menuCursor = 0;
 	}
 	if (global.pDown){
-		menu_cursor--;
-		if (menu_cursor < 0) menu_cursor = menu_items - 1;
+		menuCursor--;
+		if (menuCursor < 0) menuCursor = menuItems - 1;
 	}
-	if (global.pSELECT){
-		menu_committed = menu_cursor;
-		menu_control = false;
+	if (global.pSelect){
+		menuCommitted = menuCursor;
+		menuControl = false;
 	}		
 	
 	//mouse control of menu
-	if ((mouse_y < menu_y) and (mouse_y > menu_top) and (between(mouse_x,menu_x - GUIWIDTH/6,menu_x + GUIWIDTH/6))){
-		menu_cursor = (menu_y - mouse_y) div (menu_itemheight * 1.5);
+	if ((mouse_y < menu_y) and (mouse_y > menuTop) and (between(mouse_x,menu_x - GUIWIDTH/6,menu_x + GUIWIDTH/6))){
+		menuCursor = (menu_y - mouse_y) div (menuItemHeight * 1.5);
 		if (global.pMBLeft){
-			menu_committed = menu_cursor;
-			menu_control = false;
+			menuCommitted = menuCursor;
+			menuControl = false;
 		}
 	}
 }
 
-if (menu_committed != -1){
-	switch (menu_committed){
+if (menuCommitted != -1){
+	switch (menuCommitted){
 		case 3: default:{
 			transition("slide",TRANS_MODE.NEXT);
 			audio_stop_all();
 		}break;
 		case 2: {
 			state = menu_states.howto;
-			menu_control = false;
+			menuControl = false;
 		}break;
 		case 1: {
 			state = menu_states.credits;
-			menu_control = false;
+			menuControl = false;
 			break;
 		} break;
 		case 0: game_end(); break;

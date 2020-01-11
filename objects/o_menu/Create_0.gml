@@ -1,13 +1,13 @@
 x = 0;
 y = 0;
-gui_margin = 32;
+guiMargin = 32;
 
 menu_x = room_width/2;
 menu_y = 350;
-menu_font = fnt_pixel32;
-menu_itemheight = font_get_size(menu_font);
-menu_committed = -1;
-menu_control = true;
+menuFont = fnt_pixel32;
+menuItemHeight = font_get_size(menuFont);
+menuCommitted = -1;
+menuControl = true;
 
 menu[3] = "Start";
 menu[2] = "How to Play";
@@ -22,6 +22,6 @@ enum menu_states{
 }
 state = menu_states.normal;
 
-menu_items = array_length_1d(menu);
-menu_cursor = array_length_1d(menu)-1;
-menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);
+menuItems = array_length_1d(menu);
+menuCursor = array_length_1d(menu)-1;
+menuTop = menu_y - ((menuItemHeight * 1.5) * menuItems);
