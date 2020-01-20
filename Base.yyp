@@ -3,7 +3,9 @@
     "modelName": "GMProject",
     "mvc": "1.0",
     "IsDnDProject": false,
-    "configs": [],
+    "configs": [
+        
+    ],
     "option_ecma": false,
     "parentProject": {
         "id": "6f5a044e-ae2a-484a-9bed-73473d554ef3",
@@ -22,7 +24,9 @@
                 }
             }
         ],
-        "hiddenResources": [],
+        "hiddenResources": [
+            
+        ],
         "projectPath": "${base_project}"
     },
     "resources": [
@@ -1254,7 +1258,7 @@
             "Key": "580adbad-44e7-40e0-a744-485caf651c6b",
             "Value": {
                 "id": "7421a1d8-ff1c-41dd-972f-5a2b7069f200",
-                "resourcePath": "scripts\\wrap\\wrap.yy",
+                "resourcePath": "scripts/wrap/wrap.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3664,6 +3668,14 @@
                 "id": "1784d350-8b73-47eb-a33c-3ab8215e4bf4",
                 "resourcePath": "objects\\o_hit\\o_hit.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "05528f55-0de9-0cbd-54cc-01cbf07f25ae",
+            "Value": {
+                "id": "a581461d-3832-d7d1-2721-2e4ca64e01f2",
+                "resourcePath": "scripts\\angle_rotate\\angle_rotate.yy",
+                "resourceType": "GMScript"
             }
         }
     ],
