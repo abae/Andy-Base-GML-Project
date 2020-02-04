@@ -1,6 +1,6 @@
 //resolution variables
 idealWidth = 0;
-idealHeight = 180;
+idealHeight = 1080;
 
 
 aspectRatio = 16/9;
@@ -10,19 +10,18 @@ aspectRatio = 16/9;
 idealWidth = round(idealHeight*aspectRatio);
 
 //Pixel perfect scale
-if (display_get_width() mod idealWidth != 0)
-{
-    var d = round(display_get_width()/idealWidth);
-    idealWidth = display_get_width()/d;
+if (!dev){
+	if (display_get_width() mod idealWidth != 0){
+	    var d = round(display_get_width()/idealWidth);
+	    idealWidth = display_get_width()/d;
+	}
+	if (display_get_height() mod idealHeight != 0){
+	    var d = round(display_get_height()/idealHeight);
+	    idealHeight = display_get_height()/d;
+	}
+	if (idealWidth & 1) idealWidth++;
+	if (idealHeight & 1) idealHeight++;
 }
-if (display_get_height() mod idealHeight != 0)
-{
-    var d = round(display_get_height()/idealHeight);
-    idealHeight = display_get_height()/d;
-}
-
-if (idealWidth & 1) idealWidth++;
-if (idealHeight & 1) idealHeight++;
 
 globalvar GUIWIDTH, GUIHEIGHT;
 GUIWIDTH = idealWidth;

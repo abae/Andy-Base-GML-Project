@@ -4,8 +4,8 @@ cam = view_camera[targetView];
 if (instance_exists(o_player)) follow = o_player;
 else {
     follow = -1;
-    follow_x = room_width/2;
-    follow_y = room_height/2;
+    follow_x = xstart;
+    follow_y = ystart;
 }
 origView_w = camera_get_view_width(cam);
 halfView_w = camera_get_view_width(cam)/2;
@@ -21,7 +21,8 @@ shakeRemain = 0;
 buff = 0;
 
 //zoom and move
-zoom = 1;
+origzoom = 1/3;
+zoom = origzoom;
 
 //interpolation rate
 zoomRate = .05;

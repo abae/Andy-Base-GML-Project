@@ -42,4 +42,5 @@ if (paused){
 }
 
 //clamp mouse position
-if (!dev) window_mouse_set(clamp(window_mouse_get_x(), 0, window_get_width()), clamp(window_mouse_get_y(), 0, window_get_height()));
+if (window_has_focus()) display_mouse_lock(0, 0, display_get_width(),display_get_height());
+else display_mouse_unlock();

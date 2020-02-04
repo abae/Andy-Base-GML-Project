@@ -51,10 +51,10 @@ y += random_range(-shakeRemain,shakeRemain);
 shakeRemain = max(0,shakeRemain-((1/shakeLength)*shakeMagnitude));
 
 //constrian camera
-if (room_width > GUIWIDTH) x = clamp(x,halfView_w+buff,room_width-halfView_w-buff);
-else new_x = (room_width-GUIWIDTH)/2;
-if (room_height > GUIHEIGHT) y = clamp(y,halfView_h+buff,room_height-halfView_h-buff);
-else new_y = (room_height-GUIHEIGHT)/2;
+if (room_width > GUIWIDTH*zoom) x = clamp(x,halfView_w+buff,room_width-halfView_w-buff);
+else new_x = (room_width-GUIWIDTH*zoom)/2;
+if (room_height > GUIHEIGHT*zoom) y = clamp(y,halfView_h+buff,room_height-halfView_h-buff);
+else new_y = (room_height-GUIHEIGHT*zoom)/2;
 
 //Update the view position
 camera_set_view_pos(cam, new_x, new_y);
