@@ -41,6 +41,14 @@ if (paused){
 	}
 }
 
-//clamp mouse position
-if (window_has_focus()) display_mouse_lock(0, 0, display_get_width(),display_get_height());
-else display_mouse_unlock();
+if (browser_width != width || browser_height != height){
+    width = browser_width;
+    height = browser_height;
+	//resolution_set();
+    canvas_fullscreen(base_size);
+	resolution_set();
+}
+
+////clamp mouse position
+//if (window_has_focus()) display_mouse_lock(0, 0, display_get_width(),display_get_height());
+//else display_mouse_unlock();

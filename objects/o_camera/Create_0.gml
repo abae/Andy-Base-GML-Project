@@ -21,7 +21,7 @@ shakeRemain = 0;
 buff = 0;
 
 //zoom and move
-origzoom = 1/3;
+origzoom = 1/2;
 zoom = origzoom;
 
 //interpolation rate

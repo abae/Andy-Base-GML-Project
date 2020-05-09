@@ -1,5 +1,5 @@
-//if (live_call()) return live_result;
-
+if (live_call()) return live_result;
+//show_debug_message(string(current_time));
 //Finite state machine ////////////////////////////////////////////////////////
 switch (state){
 	case states.normal: {
