@@ -1,8 +1,8 @@
 {
-    "id": "702371ff-4688-4c7f-98a5-391da2756c5d",
+    "id": "667ff367-16f4-4a09-95d0-1d7397e78277",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_sprite_pie",
+    "name": "canvas_fullscreen",
     "IsCompatibility": false,
     "IsDnD": false
 }
